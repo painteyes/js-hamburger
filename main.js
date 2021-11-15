@@ -5,26 +5,21 @@
 // dovete solo aggiungere la parte js per far si che il menu su mobile diventi visibile al click sull'hamburger menu :)
 
 
-const hamburgerMenu = document.querySelector ('.fas');
-console.log(hamburgerMenu);
-const hamburgerMenuOpen = document.querySelector ('.hamburger-menu');
-console.log(hamburgerMenuOpen);
+const hamburgerMenu = document.querySelector ('.header-right > a');
 
+const hamburgerMenuOpen = document.querySelector ('.hamburger-menu');
 
 hamburgerMenu.addEventListener ( 'click', 
     function() {
-        hamburgerMenuOpen.style.dispaly ='block';
+        hamburgerMenuOpen.style.display = 'block';
     }
 );
 
-
 const hamburgerMenuClose = document.querySelector ('.close');
-console.log(hamburgerMenuClose);
-
 
 hamburgerMenuClose.addEventListener ( 'click', 
     function() {
-        hamburgerMenuOpen.style.dispaly ='none';
+        hamburgerMenuOpen.style.display ='none';
     }
 );
 
