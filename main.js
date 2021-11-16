@@ -11,7 +11,7 @@ const hamburgerMenuOpen = document.querySelector ('.hamburger-menu');
 
 hamburgerMenu.addEventListener ( 'click', 
     function() {
-        hamburgerMenuOpen.style.display = 'block';
+        hamburgerMenuOpen.classList.add('active');
     }
 );
 
@@ -19,7 +19,7 @@ const hamburgerMenuClose = document.querySelector ('.close');
 
 hamburgerMenuClose.addEventListener ( 'click', 
     function() {
-        hamburgerMenuOpen.style.display ='none';
+        hamburgerMenuOpen.classList.remove('active');
     }
 );
 
